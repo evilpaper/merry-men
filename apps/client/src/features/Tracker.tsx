@@ -14,10 +14,10 @@ export function Tracker() {
 
       console.log(`X:${source.clientX}, Y:${source.clientY}`)
     }
-  ​
+
     window.addEventListener('mousemove', handleMove)
     window.addEventListener('touchmove', handleMove)
-  ​
+
     return () => {
       window.removeEventListener('mousemove', handleMove)
       window.removeEventListener('touchmove', handleMove)
