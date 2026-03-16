@@ -1,4 +1,4 @@
-import { Tracker } from "./Tracker";
+import { Tracker } from "./features/Tracker";
 
 import "./index.css";
 
