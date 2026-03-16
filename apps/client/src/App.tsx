@@ -4,7 +4,7 @@ import "./index.css";
 
 export function App() {
   return (
-    <div className="app bg-white">
+    <div className="app w-screen h-screen">
       <p>The Merry Men</p>
       <Tracker/>
     </div>
