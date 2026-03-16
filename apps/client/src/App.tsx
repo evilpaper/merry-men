@@ -4,7 +4,7 @@ import "./index.css";
 
 export function App() {
   return (
-    <div className="app w-screen h-screen">
+    <div className="app w-screen h-screen flex items-center justify-center">
       <p>The Merry Men</p>
       <Tracker/>
     </div>
