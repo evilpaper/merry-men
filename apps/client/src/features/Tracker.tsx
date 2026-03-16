@@ -1,6 +1,8 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
+import { Cursor } from "./Cursor";
 
 export function Tracker() {
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   useEffect(() => {
     function handleMove(event: MouseEvent | TouchEvent) {
 
@@ -12,6 +14,7 @@ export function Tracker() {
       // - TypeScript’s view of the world
       if (!source) return
 
+      setMousePos({ x: source.clientX, y: source.clientY });
       console.log(`X:${source.clientX}, Y:${source.clientY}`)
     }
 
@@ -24,5 +27,5 @@ export function Tracker() {
     }
   }, [])
   
-    return null
+    return <Cursor  x={mousePos.x} y={mousePos.y} id="Robin Hood" />
   }
