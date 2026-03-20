@@ -8,6 +8,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* hide default cursor. We'll use our own. */
+  cursor: none;
+
 }
 
 p {

@@ -38,12 +38,12 @@ export function Cursor({ id, x, y }: CursorProps) {
  
       {/* 👇 name tag */}
       <div
-        className="absolute left-2 top-5 whitespace-nowrap rounded-full px-2 py-1 text-sm font-medium text-white shadow-lg"
+        className="absolute left-2 top-5 whitespace-nowrap rounded-full px-4 py-1 text-sm font-medium text-white shadow-lg"
         style={{
           backgroundColor: color,
         }}
       >
-        @{id}
+        {id}
       </div>
     </div>
   );
